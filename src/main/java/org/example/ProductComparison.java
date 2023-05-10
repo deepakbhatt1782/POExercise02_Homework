@@ -6,6 +6,7 @@ public class ProductComparison extends Utils{
     private By _theProductHasBeenAddedToYourProductComparison = By.xpath("(//a[contains(@href,'/compareproducts')])[1]");
     private By _productOneName = By.xpath("//a[contains(text(),'HTC One M8 Android L 5.0 Lollipop')]");
     private By _productTwoName =By.xpath("//a[contains(text(),'Apple MacBook Pro 13-inch')]");
+
     public void comparetwoproducts(){
         //click add to compare list button for HTC One M8 Android L 5.0 Lollipop
         clickOnElement(_addToCompareListButtonForHTCOneM8AndroidL5Lollipop);

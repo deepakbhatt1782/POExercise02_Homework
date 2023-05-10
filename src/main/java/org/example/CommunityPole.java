@@ -9,5 +9,9 @@ public class CommunityPole extends Utils{
         //click on vote button
         clickOnElement(_voteButton);
     }
+    public void voteWithoutSelectingAnyOption(){
+        //click on vote button
+        clickOnElement(_voteButton);
+    }
 }
 

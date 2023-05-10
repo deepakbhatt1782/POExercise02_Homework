@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeMethod;
         public void setUp(){driverManager.openBrowser();}
 
         @AfterMethod
-        public void tearDown(){driverManager.closeBrowser();}
+        public void tearDown(){
+           // driverManager.closeBrowser();
+        }
     }
 

@@ -1,4 +1,5 @@
 package org.example;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 public class CommunityPoleResultPage extends Utils{
@@ -17,6 +18,11 @@ public class CommunityPoleResultPage extends Utils{
         Assert.assertTrue(elementIsDisplayed(_actualCommunityPoleResultMessage));
         //user should not see error message
         Assert.assertFalse(elementIsDisplayed(_actualErrorMessage));
+    }
+    public void verifyUserShouldSeeAlertMessage(){
+        Alert alert =  driver.switchTo().alert();
+        Assert.assertEquals(alert.getText(),"Please select an answer");
+        alert.accept();
     }
 }
 
